@@ -1,0 +1,16 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper22">
+
+    <ImageView
+        android:id="@+id/sun2"
+        android:layout_width="242dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/logoexplurzer1" />
+
+</LinearLayout>

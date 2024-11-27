@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity"
+    android:orientation="vertical"
+    android:background="#B6B6B6"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="377dp"
+        app:cardBackgroundColor="#590E3D70"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="600dp"
+            android:orientation="vertical"
+            android:background="#6BDBE3EF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="250dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Your Details"
+                android:textAlignment="center"
+                android:textColor="#072353"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/baseline_person_outline_24"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint=" Name:Uday Gajanan Payghon "
+                android:textColorHint="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/baseline_mail_outline_24"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint=" Gmail:udaypayghon@gmail.com"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <EditText
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/baseline_send_to_mobile_24"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint=" Mo.No:9373117712"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login_login"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/purple"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginRight="40dp"
+                android:text="BACK    ⬅️ "
+                android:textColor="#E4DFCB"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

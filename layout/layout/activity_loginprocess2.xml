@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hackerbackground1"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.hackingactivity.FlashAnim">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#02FFFFFF"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/afterlogin" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="377dp"
+        android:backgroundTint="#3B167485"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#6BDBE3EF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="WELCOME BACK"
+                android:textAlignment="center"
+                android:textColor="#072353"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/baseline_person_outline_24"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="  username : "
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="15dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/baseline_perm_device_information_24"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="  password :"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/check_login_show_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Show Password"
+                android:textColor="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login_login"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/purple"
+
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:text="LOGIN"
+                android:textColor="#E4DFCB"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_login_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:text="New user( CLICK HERE ? ) "
+                android:textColor="@color/purple"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/social_icons"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:text="POWERED BY "
+        android:textColor="#0A0357"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/social_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#0082B1FF"
+        android:textAlignment="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/google" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/twiter" />
+    </LinearLayout>
+
+
+</LinearLayout>
